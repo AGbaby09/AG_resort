@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+body{
+	background-color: teal;
+	max-width: 100%;
+}
+
+
+@media screen and (max-width: 2590px){
+
+	.nav{
+		position: fixed;
+		z-index: 2;
+		width: 100%;
+		background-color: teal;
+		height: 10vh;
+		display: flex;
+		justify-content: space-between;top: 0;
+	}
+	.nav h4{
+		position: relative;
+		width: fit-content;
+		margin: 0;
+		height: 6vh;
+		top: 20%;
+		color: lightcyan;
+		margin-left: 40px;
+		font-family: 'Parisienne', cursive;
+		text-shadow: 1px 1px 3px black;
+		font-weight: 600;
+	}
+	.nav ul{
+		display: flex;
+		align-items: center;
+		width: 40%;
+		height: 6vh;
+		position: relative;
+		top: 20%;
+		justify-content: space-evenly;
+		float: right;
+	}
+	.nav ul li{
+		padding: 7px 12px;
+	}
+	.nav ul li a{
+		font-family: 'Secular One', sans-serif;
+		padding: 7px 12px;
+		border-radius: 20px;
+		text-align: center;
+		background-color: lightcyan;
+		color: teal;/*#80cbc4*/;
+		text-shadow: 1px 1px 1px grey;
+		box-shadow: 0px 0px 1px 1px #aaa;
+		z-index: 1;
+		/*transition: .1s ease;*/
+	}
+	.nav ul li a:hover{
+		background-color: #80cbc4;
+		color: white;
+		text-shadow: 1px 1px 3px black;
+		box-shadow: 1px 1px 3px 1px teal;
+		transition: .1s ease-in-out;
+	}
+	.backIMG{
+		position: relative;
+		background-image: url(resort.jpg);
+		background-size: cover;
+		background-position: top;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 80vh;
+	}
+	section h2{
+		color: white;
+		position:absolute;
+		top: 45%;
+		border-bottom: 4px solid white;
+		margin-left: 50px;
+		font-size: 4.5em;
+		margin-top: 0;
+		padding: 0;
+		text-shadow: 2px 2px aqua, 4px 4px teal,6px 6px 3px yellowgreen;
+		animation: riseT 2s;
+		opacity: 0.8;
+	}
+	section h1{
+		color: white;
+		position:absolute;
+		top: 25%;
+		font-weight: 500;
+		margin-left: 50px;
+		font-size: 6em;
+		margin-top: 50px;
+		padding: 0;
+		text-shadow: 2px 2px aqua, 4px 4px teal,6px 6px 3px yellowgreen;
+		animation: riseB 2s;
+		opacity: 0.8;
+	}
+	section .short{
+		width: 25%;
+		margin-left:55px;
+		position: absolute;
+		display: flex;
+		justify-content: space-evenly;
+		bottom: 35vh;
+	}
+	
+	.short a{
+		border: 5px double white;
+		padding: 10px 25px;
+		border-radius: 50px;
+		color: white;
+		font-family: 'Readex Pro', sans-serif;
+		text-shadow: 1px 1px 3px black;
+		box-shadow: 1px 1px 3px 1px teal;
+		animation: opaque 8s;
+		font-size: 1.2em;
+	}
+	.short a:hover{
+		background-color: white;
+		border: 5px double teal;
+		color: teal;
+		text-shadow: 1px 1px 3px #aaa;
+		transition: .1s ease-in-out;
+	}
+	.path1{/*d*/
+		position: relative;
+		left: 70%;
+		bottom: 80vh;
+		background-color: teal;
+		opacity: 0.5;
+		height: 80vh;
+		width: 10%;
+		animation: moveD 10s infinite;
+		clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+	}
+	.path2{/*c*/
+		position: relative;
+		left: 50%;
+		bottom: 80vh;
+		background-color: #64ffda;
+		opacity: 0.5;
+		height: 80vh;
+		width: 10%;
+		animation: moveC 10s infinite;
+		clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+	}
+	.path3{/*b*/
+		position: relative;
+		left: 60%;
+		bottom: 80vh;
+		background-color: aqua;
+		opacity: 0.5;
+		height: 80vh;
+		width: 10%;
+		animation: moveB 10s infinite;
+		clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+	}
+	.path4{/*a*/
+		position: relative;
+		left: 20%;
+		bottom: 80vh;
+		background-color: lightcyan;
+		opacity: 0.5;
+		height: 80vh;
+		width: 10%;
+		animation: moveA 10s infinite;
+		clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+	}
+	#path{
+		display: flex;
+	}
+	aside{
+		height: 5vh;
+	}
+	.new{
+		display: flex;
+		height: 60vh;
+		margin: 0;	
+	}
+	.new #image1{
+		position: relative;
+		top: 40%;
+		left: 5%;
+		background: url(music.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 30%;
+		height: 30vh;
+	}
+	.new #image2{
+		position: relative;
+		top: 30%;
+		left: -15%;
+		background: url(spa.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 30%;
+		height: 30vh;
+	}
+	.new #image3{
+		position: relative;
+		top: 20%;
+		left: -35%;
+		background: url(privres.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 30%;
+		height: 30vh;
+	}
+	.new #image4{
+		position: relative;
+		top: 10%;
+		left: -55%;
+		background: url(food.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 30%;
+		height: 30vh;
+	}
+	.new div{
+		margin: 0;
+		opacity: 0.5;
+		border-radius: 10px;
+		cursor: pointer;
+		width: fit-content;
+	}
+	.raw{
+		position: relative;
+		bottom: 4vh;
+		text-align: center;
+		padding-left: 110px;
+		font-family: 'Readex Pro', sans-serif;
+		color: white;
+		text-shadow: 1px 1px 3px black;
+		font-size: 1.2em;
+	}
+	.parallax-container{
+		display: grid;
+		height: 5vh;
+	}
+	#partext{
+		color: white;
+		font-weight: 700;
+		position: relative;
+		margin: auto;
+		border-bottom: 7px double white;
+		width: fit-content;
+		padding-bottom: 20px;
+		top: 40%;
+		text-shadow: 3px 3px cyan, 6px 6px yellowgreen, 9px 9px teal;
+		opacity: 0.9;
+		font-size: 5em;
+		animation: fade-in-bottom;
+		animation: fade-in-right 6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both infinite;
+	}
+
+	#reviews{
+		color: lightcyan;
+		font-size: 1.2em;
+		width: 40%;
+		position: relative;
+		display: block;
+		text-align: center;
+		height: 0px;
+		left: 55%;
+		bottom:55vh;
+		text-shadow: 1px 1px 2px black;
+	}
+	#reviews h1{
+		font-family: 'Grand Hotel', cursive;
+	}
+	#reviews p{
+		font-family: 'Readex Pro', sans-serif;
+	}
+
+	video{
+		width: 100%;
+		opacity: 0.7;
+	}
+	#click{
+		color: lightcyan;
+		width: fit-content;
+		position: relative;
+		transform: rotate(330deg);
+		top: 10vh;
+		left: 10vh;
+		font-family: 'Grand Hotel', cursive;
+		animation: heartbeat 1.5s ease-in-out infinite both;
+	}
+	footer{
+		position: relative;
+		background-color: black;
+		height: 20vh;
+		top: 5vh;
+		opacity: 0.7;
+		display: flex;
+		padding-left:100px ;
+	}
+	.one{
+		height: 20vh;
+	}
+	.one ul li{
+		margin: 20px 0px;
+		width: fit-content;
+	}
+	.two{
+		height: 20vh;
+	}
+	.two ul li{
+		margin: 20px 0px;
+		width: fit-content;
+	}
+	.two ul li a{
+		text-align: center;
+		color: lightcyan;
+	}
+	.three{
+		height: 20vh;
+	}
+	.three ul{
+		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;		
+		top: 25%;
+		justify-content: space-evenly;
+	}
+	.three ul i{
+		color: lightcyan;
+		font-size: 5em;
+	}
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+/*animations*/
+@keyframes moveA{
+	0%{
+		left: 20%;
+	}
+	
+	50%{
+		left: 55%;
+	}
+	100%{
+		left: 20%;
+	}
+}
+@keyframes moveB{
+	0%{
+		left: 60%;
+	}
+	
+	50%{
+		left: 35%;
+	}
+	100%{
+		left: 60%;
+	}
+}
+@keyframes moveC{
+	0%{
+		left: 50%;
+	}
+	
+	50%{
+		left:60%;
+	}
+	100%{
+		left: 50%;
+	}
+}
+@keyframes moveD{
+	0%{
+		left: 70%;
+	}
+	
+	50%{
+		left: 40%;
+	}
+	100%{
+		left: 70%;
+	}
+}
+@keyframes riseT{
+	0%{
+		opacity: 0;
+		top: 65%;
+	}
+	100%{
+		opacity: 0.8;
+		top: 45%;
+	}
+}
+@keyframes riseB{
+	0%{
+		opacity: 0;
+		top: 65%;
+	}
+	100%{
+		opacity: 0.8;
+		top: 25%;
+	}
+}
+@keyframes opaque{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/*@media screen and (max-width: 850px){
+
+	.nav{
+		max-width: 100%;
+		background-color: red;
+		height: 10vh;
+		justify-content: center;
+		justify-items: center;
+	}
+	.nav ul{
+		display: flex;
+		border: 1px solid blue;
+		max-width: 40%;
+		position: relative;
+		top: 60%;
+	}
+
+}
+
+
+@media screen and (max-width: 350px){
+
+	.nav{
+		max-width: 100%;
+		background-color: blue;
+		height: 10vh;
+		justify-content: center;
+		justify-items: center;
+	}
+	.nav ul{
+		display: flex;
+		border: 1px solid blue;
+		max-width: 40%;
+		position: relative;
+		top: 60%;
+	}
+
+}*/
